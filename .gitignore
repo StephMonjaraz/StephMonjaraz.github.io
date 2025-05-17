@@ -1,0 +1,6 @@
+# Archivos para ignorar
+*.log
+*.tmp
+*.bak
+.DS_Store
+node_modules/
