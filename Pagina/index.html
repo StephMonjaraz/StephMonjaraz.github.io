@@ -1,59 +1,99 @@
-<!DOCTYPE html> <!-- Indica al navegador q este archivo es un doc html5 -->
-<html lang="es"> <!-- Indica el idioma del contenido -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Steph – Página en construcción</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tengo que sacar el CSS a un archivo externo -->
+  <style> 
+    body {
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    header nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    .cta {
+      background-color: #00ffff;
+      color: #000;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin: 2rem auto;
+    }
+    .cta:hover {
+      background-color: #00dddd;
+      transform: scale(1.05);
+    }
+    h1 {
+      margin-top: 2rem;
+      font-size: 2.5rem;
+      color: #00ffff;
+    }
+    p {
+      color: #ccc;
+      margin-top: 1rem;
+    }
 
-<head> <!-- Nuestra sección de configuraciones -->
-    <meta charset="UTF-8"> <!-- Indica la codificación de caracteres como uft-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
-    <title>Mi primera página web</title> <!-- Titulo de la pestaña -->
-    <link rel="stylesheet" href="style.css">
+    footer {
+
+      margin-top: 4rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-
 
 <body>
 
-    <header> <!-- Encabezado pagina web -->
-        <nav> <!-- Barra de navegación -->
-            <ul> <!-- Lista no ordenada -->
-            <li><a href = "https://github.com/StephMonjaraz" target="_blank"> github</a> </li>
-            <li><a href="listas.html" target="_blank">Listas</a></li>
-            <li><a href="tablas.html" target="_blank">Mascotas</a></li>
-            <li><a href="iconos.html" target="_blank">íconos</a></li>
-            <li><a href="especificidad.html" target="_blank">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/StephMonjaraz" target="_blank">GitHub</a></li>
+        <li><a href="listas.html" target="_blank">Listas</a></li>
+        <li><a href="tablas.html" target="_blank">Mascotas</a></li>
+        <li><a href="iconos.html" target="_blank">Íconos</a></li>
+        <li><a href="especificidad.html" target="_blank">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h1>Primera página web</h1>
-            <p>Este párrafo está dentro de una sección</p>
-        </section>
-        
-        <h2>Formulario</h2>
-        <form>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"> <br>
-            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo"> <br>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña"> <br>
-            <input type="submit" value="Enviar" > <br>
-        </form>
-        <h3>¿Cómo se creó este formulario</h3>
+  <main>
+    <h1>🚧 Página principal en construcción</h1>
+    <p>Este espacio servirá como portal central de mi portafolio personal.</p>
 
-        <pre>
-        <code>
-            &lt;form&gt; <!-- etiqueta de formulario -->
-            &lt;input type="text" id="nombre" name="nombre" placeholder="Tu nombre"&gt; &lt;br&gt; <!-- campo de texto para el nombre -->
-            &lt;input type="email" id="nombre" name="email" placeholder="ejemplo@ej.com"&gt; &lt;br&gt; <!-- campo de texto para el email -->
-            &lt;input type="password" id="nombre" name="password" placeholder="contraseña"&gt; &lt;br&gt; <!-- campo de texto para la contraseña -->
-            &lt;input type="submit" value="Enviar"&gt; &lt;br&gt; <!-- botón de enviar -->
-            &lt;/form&gt; <!-- cierre de la etiqueta de formulario -->
-        </code>
-        </pre>
-    </main>
+    <a class="cta" href="../StephsRevengeLab/index.html" target="_blank">⚡ Entrar al Laboratorio de Venganza</a>
 
-    <footer> <!-- Pie de pagina -->
-        <p>Derechos reservados &copy; 2025</p>
+    <p>Mientras tanto, puedes visitar algunas prácticas o tareas desde el menú superior.</p>
+  </main>
+
+  <footer>
+    <p>Derechos reservados © 2025 – Steph Monjaraz</p>
+  </footer>
 
 </body>
-
-
 </html>

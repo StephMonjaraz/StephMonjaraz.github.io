@@ -1,0 +1,250 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+  /* padding-top: 60px; */  /* ya quite el espacio negro */
+}
+
+
+/* BLOQUES, despues separar  */
+.full-block {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+
+
+.hero.full-block {
+  margin-top: 60px;
+}
+
+.content {
+  max-width: 960px;
+  margin: auto;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+
+}
+
+.dark-overlay::before,
+.bright-overlay::before {
+
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+
+.dark-overlay::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.bright-overlay::before {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.dark-overlay .content,
+.bright-overlay .content {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  height: 60px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2); /* 🔄 MÁS TRANSPARENTE */
+  backdrop-filter: blur(10px);   /* ✅ Efecto vidrio */
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+
+
+.topnav .logo {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #f0f0f0;
+  white-space: nowrap;
+}
+
+
+.topnav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+.topnav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+.topnav a:hover {
+  color: #00ffff;
+}
+
+
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  padding: 2rem;
+  color: white;
+}
+
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #a4faf6;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+
+.cta-button {
+  background: #00ffff;
+  color: #000;
+
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+
+
+.cta-button:hover {
+  background: #00dddd;
+  transform: scale(1.05);
+}
+
+/*seccions */
+section {
+  padding: 3rem 1.5rem;
+}
+
+
+h3 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+
+/* la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: rgba(0,0,0,0.4);
+}
+
+
+table th, table td {
+  border: 1px solid #444;
+
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.done {
+  color: #00ff88;
+}
+
+.progress {
+  color: #ffcc00;
+}
+
+.pending {
+  color: #888;
+}
+
+
+
+
+
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+.quote blockquote {
+  font-style: italic;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.subnote {
+  font-style: italic;
+  color: #ffd700;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+footer .license {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+
+footer .ending {
+    
+  color: #00f0ff;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
